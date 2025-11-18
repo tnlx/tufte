@@ -1,12 +1,13 @@
 name = "Tufte"
 license = "MIT"
-licenselink = "https://github.com/shawnohare/hugo-tufte/blob/master/LICENSE.md"
+licenselink = "https://github.com/tnlx/tuft/blob/main/LICENSE.md"
 description = "A minimalist blog theme using Tufte-css."
-homepage = "http://github.com/shawnohare/hugo-tufte"
+homepage = "https://github.com/tnlx/tufte"
 tags = ["blog", "tufte", "minimal"]
 features = ["math", "tufte-css", "tufte"]
 min_version = 0.15
+authors = [
+{ name = "Shawn O'Hare", homepage = "https://www.shawnohare.com" },
+{ name = "Thuc Le", homepage = "https://keyli3e.com" }
+]
 
-[author]
-  name = "Shawn O'Hare"
-  homepage = "http://www.shawnohare.com"

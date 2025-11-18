@@ -1,5 +1,6 @@
 The MIT License (MIT)
 
+Copyright (c) 2025 Thuc Le <https://keyli3e.com>
 Copyright (c) 2015 Shawn O'Hare 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of

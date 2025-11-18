@@ -1,0 +1,19 @@
+# -------------------------------------------
+# Local development
+# -------------------------------------------
+services:
+  devkit:
+    image: ghcr.io/gohugoio/hugo:v0.152.2
+    ports:
+      - 1313:1313
+    working_dir: /project/site
+    command: >
+      server
+      --bind 0.0.0.0
+      --cleanDestinationDir
+      --baseURL http://localhost:1313
+      --buildDrafts
+      --themesDir /themes
+    volumes:
+      - ./exampleSite:/project/site
+      - ./:/themes/hugo-tufte

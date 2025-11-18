@@ -1,3 +1,7 @@
+<title>{{ .Site.Title }} - {{ .Title  }}</title>
+{{ partial "meta.html" . }}
+{{ partial "opengraph.html" }}
+
 <!-- Load MathJax, if necessary. -->
 {{ if or .Params.math .IsHome }}
   {{ partial "math.html" . }}
