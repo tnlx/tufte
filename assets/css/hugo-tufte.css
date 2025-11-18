@@ -262,27 +262,17 @@ details summary.year {
 details[open] summary {
 }
 
-
-
 /* ------------------------------------------------------------------------ */
-/*  MathJax styling
+/*  KaTeX styling
 /* ------------------------------------------------------------------------ */
-.MathJax {
-    font: inherit;
-    color: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-}
-
-.MathJax_Display {
+.katex-display {
     font: inherit;
     color: inherit;
     font-size: 100%;
     background: inherit;
     border: inherit;
     padding-bottom: 1rem;
-    /* max-width: 45rem; */
+     max-width: 45rem; 
     overflow-x: auto;
     overflow-y: auto;
 }

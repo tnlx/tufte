@@ -1,7 +1,6 @@
 +++
 author = "Hiro Protagonist"
 date = "2015-01-19T23:57:58-08:00"
-hasMath = false
 title = "Blockquotes"
 
 +++

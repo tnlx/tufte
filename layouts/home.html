@@ -7,6 +7,11 @@
   {{ if .Truncated }}
   <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
   {{ end  }}
+  {{/* if subpage's summary contains math equations,
+  "math" should be activated on home page as well */}}
+  {{ if .Page.Store.Get "hasMath" }}
+  {{- $.Page.Store.Set "hasMath" true }}
+  {{ end }}
 {{ end  }}
 </article>
 </div>

@@ -2,11 +2,6 @@
 {{ partial "meta.html" . }}
 {{ partial "opengraph.html" }}
 
-<!-- Load MathJax, if necessary. -->
-{{ if or .Params.math .IsHome }}
-  {{ partial "math.html" . }}
-{{ end }}
-
 <!-- Syntax highlighting -->
 <!-- {{ partial "highlight.html" . }} -->
 
@@ -16,6 +11,18 @@
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Math -->
+{{ $noop := .WordCount }}{{/*force content rendering before we
+check the value of hasMath with the Store.Get method.*/}}
+{{ if .Page.Store.Get "hasMath" }}
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css"
+integrity="sha384-WcoG4HRXMzYzfCgiyfrySxx90XSl2rxY5mnVY5TwtWE6KLrArNKn0T/mOgNL0Mmi"
+crossorigin="anonymous"
+>
+{{ end }}
 
 <!-- Main CSS file based on Pure blog layout -->
 {{ partialCached "css.html" "css/tufte.css" "tufte" }}
