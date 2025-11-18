@@ -1,0 +1,8 @@
+<article class='callout {{ .AlertType }}'>
+  {{ with ( or .AlertTitle ( i18n .AlertType ) )}}
+  <h2 class="heading">{{ . }}</h2>
+  {{ end }}
+  <div class="content">
+    {{ .Text }}
+  </div>
+</article>

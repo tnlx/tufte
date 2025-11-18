@@ -7,6 +7,11 @@ baseurl = "https://github.com/shawnohare/hugo-tufte"
 theme = "hugo-tufte"
 title = "Hugo-tufte Theme Example Site"
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 [taxonomies]
   category = "categories" 
   group = "groups"

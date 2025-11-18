@@ -88,18 +88,6 @@ support all the features present in the
   {{% /blockquote %}}`
   ```
 
-- `div`
-   - **Description**: This shortcode is provided as a work-around for wrapping
-   complex blocks of markdown in div tags. The wrapped text can
-   include other shortcodes
-   - **Usage**: Identical to the `section` shortcode.
-   Accepts the style parameters `class` and `id`.
-   If only the positional argument `"end"` is passed, a closing tag
-   will be inserted.
-   - **Example**: `{{< div class="my-class" >}}` inserts a
-   `<div class="my-class">` tag, while
-   `{{<div "end" >}}` inserts the closing `</div>` tag.
-
 - `epigraph`
   - **Description**: Create an epigraph with the wrapped text.
   - **Usage**: To include a footer with source attribution, pass in the
@@ -119,18 +107,6 @@ support all the features present in the
   - **Description**: Wrap text to produce a numberless margin note.
   - Usage: `{{% marginnote %}}...{{% /marginnote %}}`
   - **Example**: `{{% marginnote %}}Some marginnote{{% /marginnote%}}`
-
-- `section`
-   - **Description**: This shortcode is provided as a work-around for wrapping
-   complex blocks of markdown in section tags. The wrapped text can
-   include other shortcodes
-   - **Usage**: Accepts the style parameters `class` and `id`.
-   If only the positional argument `"end"` is passed, a closing tag
-   will be inserted.
-   - **Example**: `{{< section class="my-class" >}}` inserts a
-   `<section class="my-class">` tag, while
-   `{{<section "end" >}}` inserts the closing `</section>` tag.
-
 
 - `sidenote`
   - **Description**: Wrap text to produce an automatically numbered sidenote.

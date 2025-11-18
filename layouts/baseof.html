@@ -7,3 +7,15 @@
 	<footer>{{ block "footer" . }}{{ end }}</footer>
 </body>
 </html>
+
+{{ define "header" }}
+<div class="pure-g">
+	<div class="pure-u-1">
+		<div class="brand">
+			<h1>{{ .Site.Title}}</h1>
+			<h2>{{ .Site.Params.subtitle }}</h2>
+			{{ partial "nav.html" . }}
+		</div>
+	</div>
+</div>
+{{ end }}

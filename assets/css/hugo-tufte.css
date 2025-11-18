@@ -41,18 +41,21 @@ pre code {
 /* ------------------------------------------------------------------------ */
 /* Brand details, such as a sidebar or top display. */
 /* ------------------------------------------------------------------------ */
-header.brand{
+header {
+    padding: 5rem 0;
+}
+header .brand{
     margin-top: 0.5em;
 }
 
 /* Main brand title */
-header.brand h1 {
+header .brand h1 {
     margin: 0;
     font-weight: 400;
     color: rgba(65, 70, 75, 1);
 }
 
-header.brand h2 {
+header .brand h2 {
     margin: 0;
     padding-top: 0rem;
     /*font-style: normal;*/
@@ -60,7 +63,7 @@ header.brand h2 {
     color: rgba(100, 105, 110, 1);
 }
 
-header.brand hr {
+header .brand hr {
     text-align: left;
     margin-left: 0;
     width: 75%;
